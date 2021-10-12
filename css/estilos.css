@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+.barra img {
+    width: 40px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.barra {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 5%;
+    height: 8%;
+    position: fixed;
+    transition: 0.4s all;
+    z-index: 1;
+}
+
+.barra ul,
+.barra summary,
+.barra span {
+    padding: 0;
+    margin-top: 0%;
+}
+
+.barra li {
+    transition: 0.3s;
+}
+
+.barra a,
+.barra span,
+.barra summary {
+    text-decoration: none;
+    list-style: none;
+    transition: 0.4s;
+    font-size: 0px;
+    padding: 0px;
+    width: 0;
+}
+
+.barra h2 {
+    color: white;
+    font-size: 0;
+}
+
+.barra:hover img {
+    display: none;
+}
+
+.barra:hover {
+    width: 20%;
+    height: 100%;
+    background-color: rgba(13, 22, 2, 0.8);
+    top: 0;
+    left: 0;
+}
+
+.barra:hover h2 {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 35px;
+    text-align: center;
+}
+
+.barra:hover a,
+.barra:hover span {
+    font-size: 20px;
+    color: white;
+    display: block;
+    padding: 15px;
+}
+
+.barra:hover details a {
+    font-size: 15px;
+    padding-left: 60px;
+}
+
+.barra:hover>ul>li,
+.barra:hover summary {
+    border-top: 1px solid black;
+    width: 100%;
+}
+
+.barra:hover>ul>li:last-of-type {
+    border-bottom: 1px solid black;
+}
+
+.barra:hover details li:first-of-type {
+    border-top: 1px solid black;
+}
+
+.barra:hover a:hover,
+.barra:hover span:hover {
+    font-size: 22px;
+    padding: 15px 5px;
+    width: 100%;
+    background-color: rgba(102, 153, 40, 0.6);
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    cursor: pointer;
+}
+
+.barra:hover details a:hover {
+    font-size: 17px;
+    padding: 15px 50px;
+    background-color: rgb(122, 122, 122, 0.5);
+}
